@@ -1,0 +1,79 @@
+print("Na razie wartosci przeliczne sa z walut na Złote na razie wybrac mozna waluty do numeru 13!!! (STAN KURSU WALUT NA DZIEŃ 10.03.2022 12.41)")
+print("-----------------Waluty do wyboru:----------------")
+print("1. Euro (EUR)")
+print("2. Funt brytyjski (GBP)")
+print("3. Dolar amerykański (USD)")
+print("4. Frank szwajcarski (CHF)")
+print("5. Lew bułgarski (BGN)")
+print("6. Korona czeska (CZK)")
+print("7. Korona szwedzka (SEK)")
+print("8. Dirham Zjednoczonych Emiratów Arabskich (AED)")
+print("9. Dolar australijski (AUD)")
+print("10. Dolar kanadyjski (CAD)")
+print("11. Juan chiński (CNY)")
+print("12. Korona duńska (DKK)")
+print("13. Dolar hongkoński (HKD)")
+print("14. Kuna chorwacka (HRK)")
+print("15. Forint węgierski (HUF)")
+print("16. Nowy szekel izraelski (ILS)")
+print("17. Jen japoński (JPY)")
+print("18. Peso meksykańskie (MXN)")
+print("19. Korona norweska (NOK)")
+print("20. Dolar nowozelandzki (NZD)")
+print("21. Lej rumuński (RON)")
+print("22. Dinar serbski (RSD)")
+print("23. Dolar singapurski (SGD)")
+print("24. Bat tajlandzki (THB)")
+print("25. Lira turecka (TRY)")
+print("26. Rand południowoafrykański (ZAR)")
+print("--------------------------------------------------")
+
+def przeliczWaluty():
+    
+    podajWalute = input("Podaj walutę do przeliczenia:\n")
+    ilosc = input("Podaj ilość PLN do przeliczenia na " + podajWalute + "\n")
+ 
+    if podajWalute == "eur" or podajWalute == "EUR":
+        wynik = int(ilosc) * 4.8182
+        print('%0.2f' % wynik)
+    elif podajWalute == "gbp" or podajWalute == "GBP":
+        wynik = int(ilosc) * 5.7420
+        print('%0.2f' % wynik)
+    elif podajWalute == "usd" or podajWalute == "USD":
+        wynik = int(ilosc) * 4.3606
+        print('%0.2f' % wynik)
+    elif podajWalute == "chf" or podajWalute == "CHF":
+        wynik = int(ilosc) * 4.7108
+        print('%0.2f' % wynik)
+    elif podajWalute == "bgn" or podajWalute == "BGN":
+        wynik = int(ilosc) * 2.4550
+        print('%0.2f' % wynik)
+    elif podajWalute == "czk" or podajWalute == "CZK":
+        wynik = int(ilosc) * 0.1889
+        print('%0.2f' % wynik)
+    elif podajWalute == "sek" or podajWalute == "SEK":
+        wynik = int(ilosc) * 0.4472
+        print('%0.2f' % wynik)
+    elif podajWalute == "aed" or podajWalute == "AED":
+        wynik = int(ilosc) * 1.1776
+        print('%0.2f' % wynik)
+    elif podajWalute == "aud" or podajWalute == "AUD":
+        wynik = int(ilosc) * 1.1776
+        print('%0.2f' % wynik)
+    elif podajWalute == "cad" or podajWalute == "CAD":
+        wynik = int(ilosc) * 3.3900
+        print('%0.2f' % wynik)
+    elif podajWalute == "cny" or podajWalute == "CNY":
+        wynik = int(ilosc) * 0.6785
+        print('%0.2f' % wynik)
+    elif podajWalute == "dkk" or podajWalute == "DKK":
+        wynik = int(ilosc) * 0.6453
+        print('%0.2f' % wynik)
+    elif podajWalute == "hkd" or podajWalute == "HKD":
+        wynik = int(ilosc) * 0.5475
+        print('%0.2f' % wynik)
+    else:
+        print("Blad: Sprobuj jeszcze raz.")
+        przeliczWaluty()
+ 
+przeliczWaluty()
