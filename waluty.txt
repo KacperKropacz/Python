@@ -1,3 +1,4 @@
+print("INSTRUKCJA")
 print("Na razie wartosci przeliczne sa z walut na Złote na razie wybrac mozna waluty do numeru 13!!! (STAN KURSU WALUT NA DZIEŃ 10.03.2022 12.41)")
 print("-----------------Waluty do wyboru:----------------")
 print("1. Euro (EUR)")
